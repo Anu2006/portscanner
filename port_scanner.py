@@ -5,6 +5,7 @@ import socket
 host = '192.168.0.1'
 ports = 1024
 
+socket.setdefaulttimeout(0.3)
 
 def port_scanner(port):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
